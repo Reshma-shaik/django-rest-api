@@ -64,6 +64,7 @@
                           </div>
                         </form>
                   </div>
+                  {% if tasks %}
                     {% for task in tasks %}
                     <div>
                           <form  class="text-center" method="POST" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 0.5rem;">
@@ -104,6 +105,7 @@
                           </form>
                     </div>
                     {% endfor %}
+                  {% endif %}
                 </div>
             </div>
         </div>
