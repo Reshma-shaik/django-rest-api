@@ -15,6 +15,6 @@ def dashboard(request):
             Task.objects.filter(id=request.POST['delete']).delete()
     tasks = Task.objects.all()
     context = {
-        'tasks': tasks if tasks else []
+        'tasks': tasks
     }
     return render(request, 'frontend/list.html', context=context)
